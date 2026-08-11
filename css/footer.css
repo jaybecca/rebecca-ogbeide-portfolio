@@ -1,0 +1,684 @@
+/*==================================================
+        PART 12 — PORTFOLIO FOOTER
+==================================================*/
+
+.portfolio-footer{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:85px 0 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #020617 0%,
+            #0F172A 50%,
+            #172554 100%
+        );
+
+    color:#CBD5E1;
+
+}
+
+
+/*==================================================
+        BACKGROUND GLOW
+==================================================*/
+
+.portfolio-footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    top:-260px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+        rgba(37,99,235,.18);
+
+    filter:blur(70px);
+
+    pointer-events:none;
+
+}
+
+
+.portfolio-footer::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    right:-120px;
+
+    bottom:-150px;
+
+    border-radius:50%;
+
+    background:
+        rgba(56,189,248,.1);
+
+    filter:blur(55px);
+
+    pointer-events:none;
+
+}
+
+
+/*==================================================
+        FOOTER CTA
+==================================================*/
+
+.footer-cta{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+
+.footer-eyebrow{
+
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    color:#60A5FA;
+
+    font-size:1rem;
+
+    font-weight:800;
+
+    letter-spacing:2.5px;
+
+}
+
+
+.footer-cta h2{
+
+    margin:0 0 18px;
+
+    color:#F8FAFC;
+
+    font-size:
+        clamp(
+            2.2rem,
+            5vw,
+            3.7rem
+        );
+
+    line-height:1.08;
+
+    letter-spacing:-1.5px;
+
+}
+
+
+.footer-cta h2 span{
+
+    color:#38BDF8;
+
+}
+
+
+.footer-cta > p{
+
+    max-width:650px;
+
+    margin:0 auto;
+
+    color:#94A3B8;
+
+    font-size:1rem;
+
+    line-height:1.85;
+
+}
+
+
+/*==================================================
+        FOOTER ACTIONS
+==================================================*/
+
+.footer-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+
+/*==================================================
+        SOCIAL / CONTACT CARDS
+==================================================*/
+
+.footer-action{
+
+    min-width:145px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+    padding:10px 14px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    border-radius:11px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    text-align:left;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+.footer-action:hover{
+
+    transform:translateY(-4px);
+
+    background:
+        rgba(37,99,235,.13);
+
+    border-color:
+        rgba(96,165,250,.35);
+
+    box-shadow:
+        0 12px 30px
+        rgba(37,99,235,.14);
+
+}
+
+
+.footer-action-icon{
+
+    width:34px;
+
+    height:34px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:8px;
+
+    background:
+        rgba(37,99,235,.15);
+
+    color:#60A5FA;
+
+    font-size:13px;
+
+}
+
+
+.footer-action small{
+
+    display:block;
+
+    margin-bottom:2px;
+
+    color:#64748B;
+
+    font-size:.90rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.8px;
+
+}
+
+
+.footer-action strong{
+
+    display:block;
+
+    color:#E2E8F0;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+
+/*==================================================
+        DOWNLOAD CV BUTTON
+==================================================*/
+
+.footer-cv-btn{
+
+    min-height:56px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    padding:0 22px;
+
+    border-radius:11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563EB,
+            #38BDF8
+        );
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    box-shadow:
+        0 12px 30px
+        rgba(37,99,235,.25);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+.footer-cv-btn span{
+
+    font-size:12px;
+
+}
+
+
+.footer-cv-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 18px 38px
+        rgba(37,99,235,.35);
+
+}
+
+
+/*==================================================
+        DIVIDER
+==================================================*/
+
+.footer-divider{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    height:1px;
+
+    margin:60px 0 25px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(148,163,184,.2),
+            transparent
+        );
+
+}
+
+
+/*==================================================
+        FOOTER BOTTOM
+==================================================*/
+
+.footer-bottom{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:
+        1fr auto 1fr;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+
+/*==================================================
+        IDENTITY
+==================================================*/
+
+.footer-identity{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+
+.footer-identity strong{
+
+    color:#F8FAFC;
+
+    font-size:.90rem;
+
+    font-weight:700;
+
+}
+
+
+.footer-identity span{
+
+    color:#64748B;
+
+    font-size:.75rem;
+
+}
+
+
+/*==================================================
+        BACK TO TOP
+==================================================*/
+
+.footer-back-top{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:9px 14px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    border-radius:8px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    color:#94A3B8;
+
+    font-family:inherit;
+
+    font-size:.90rem;
+
+    cursor:pointer;
+
+    transition:
+        color .3s ease,
+        background .3s ease,
+        transform .3s ease;
+
+}
+
+
+.footer-back-top i{
+
+    color:#60A5FA;
+
+    font-size:20px;
+
+}
+
+
+.footer-back-top:hover{
+
+    color:#FFFFFF;
+
+    background:
+        rgba(37,99,235,.13);
+
+    transform:translateY(-2px);
+
+}
+
+
+/*==================================================
+        COPYRIGHT
+==================================================*/
+
+.footer-copyright{
+
+    color:#64748B;
+
+    font-size:.90rem;
+
+    text-align:right;
+
+}
+
+
+/*==================================================
+        TABLET
+==================================================*/
+
+@media(max-width:900px){
+
+    .portfolio-footer{
+
+        padding:75px 0 25px;
+
+    }
+
+
+    .footer-bottom{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .footer-back-top{
+
+        justify-self:end;
+
+    }
+
+
+    .footer-copyright{
+
+        grid-column:1 / -1;
+
+        text-align:center;
+
+        padding-top:5px;
+
+    }
+
+}
+
+
+/*==================================================
+        MOBILE
+==================================================*/
+
+@media(max-width:600px){
+
+    .portfolio-footer{
+
+        padding:65px 0 25px;
+
+    }
+
+
+    .footer-cta h2{
+
+        font-size:2.25rem;
+
+    }
+
+
+    .footer-cta > p{
+
+        padding:0 10px;
+
+        font-size:.90rem;
+
+    }
+
+
+    .footer-actions{
+
+        flex-direction:column;
+
+        width:100%;
+
+        max-width:320px;
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .footer-action,
+    .footer-cv-btn{
+
+        width:100%;
+
+        box-sizing:border-box;
+
+    }
+
+
+    .footer-bottom{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+
+        gap:16px;
+
+    }
+
+
+    .footer-identity{
+
+        align-items:center;
+
+    }
+
+
+    .footer-back-top{
+
+        order:2;
+
+    }
+
+
+    .footer-copyright{
+
+        order:3;
+
+        text-align:center;
+
+        line-height:1.6;
+
+    }
+
+}
+
+
+/*==================================================
+        SMALL MOBILE
+==================================================*/
+
+@media(max-width:400px){
+
+    .footer-cta h2{
+
+        font-size:2rem;
+
+    }
+
+
+    .footer-eyebrow{
+
+        font-size:.90rem;
+
+    }
+
+
+    .footer-action{
+
+        min-width:0;
+
+    }
+
+}

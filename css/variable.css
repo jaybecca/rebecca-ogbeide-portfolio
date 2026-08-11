@@ -1,0 +1,25 @@
+/*=========================================
+            VARIABLES
+=========================================*/
+
+:root{
+
+    --primary:#2563EB;
+
+    --secondary:#7C3AED;
+
+    --accent:#10B981;
+
+    --dark:#0F172A;
+
+    --light:#F8FAFC;
+
+    --text:#475569;
+
+    --white:#ffffff;
+
+    --shadow:0 20px 40px rgba(37,99,235,.12);
+
+    --transition:.35s ease;
+
+}

@@ -1,0 +1,82 @@
+/*=========================================
+            GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+            RESET
+=========================================*/
+
+*,
+*::before,
+*::after{
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    margin:0;
+
+    font-family:"Inter", sans-serif;
+
+    color:#0F172A;
+
+    background:#ffffff;
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8FAFC;
+
+    color:#334155;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+}
+
+
+.hero-content h1,
+.logo-text{
+
+    font-family:"Poppins", sans-serif;
+
+}
+

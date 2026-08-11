@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <title>404 | Page Not Found</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- 404 Page CSS -->
+    <link
+        rel="stylesheet"
+        href="css/404.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ==========================================
+                404 PAGE
+    =========================================== -->
+
+    <main class="error-page">
+
+        <!-- Background decoration -->
+
+        <div class="error-glow glow-one"></div>
+
+        <div class="error-glow glow-two"></div>
+
+
+        <!-- ======================================
+                    NAVIGATION
+        ======================================= -->
+
+        <header class="error-header">
+
+            <a
+                href="index.html"
+                class="error-logo"
+            >
+
+                <img
+                    src="images/rebecca.png"
+                    alt="Portfolio Logo"
+                >
+
+            </a>
+
+        </header>
+
+
+        <!-- ======================================
+                    ERROR CONTENT
+        ======================================= -->
+
+        <section class="error-content">
+
+            <div class="error-icon">
+
+                <i class="fa-solid fa-cloud"></i>
+
+            </div>
+
+
+            <span class="error-label">
+
+                ERROR 404
+
+            </span>
+
+
+            <h1>
+
+                Page
+                <span>Not Found.</span>
+
+            </h1>
+
+
+            <p>
+
+                Looks like this page has been moved,
+                deleted, or doesn't exist anymore.
+
+                Don't worry — let's get you back
+                to exploring my work.
+
+            </p>
+
+
+            <!-- ==================================
+                        BUTTONS
+            =================================== -->
+
+            <div class="error-buttons">
+
+                <a
+                    href="index.html"
+                    class="error-btn primary-error-btn"
+                >
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Back to Home
+
+                </a>
+
+
+                <a
+                    href="index.html#projects"
+                    class="error-btn secondary-error-btn"
+                >
+
+                    View My Projects
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- ==================================
+                    TECHNICAL MESSAGE
+            =================================== -->
+
+            <div class="error-terminal">
+
+                <div class="terminal-top">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <div class="terminal-body">
+
+                    <p>
+
+                        <span class="terminal-green">
+                            $
+                        </span>
+
+                        locate requested_page
+
+                    </p>
+
+                    <p class="terminal-output">
+
+                        Page not found...
+
+                    </p>
+
+                    <p>
+
+                        <span class="terminal-green">
+                            $
+                        </span>
+
+                        redirect --home
+
+                        <span class="cursor">
+                            _
+                        </span>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+                    FOOTER
+        ======================================= -->
+
+        <footer class="error-footer">
+
+            <p>
+
+                ©
+                <span id="currentYear"></span>
+                All Rights Reserved.
+
+            </p>
+
+            <p>
+
+                Built with curiosity,
+                code & continuous learning.
+
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- ==========================================
+                CURRENT YEAR
+    =========================================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function(){
+
+                const year =
+                    document.getElementById(
+                        "currentYear"
+                    );
+
+                if(year){
+
+                    year.textContent =
+                        new Date().getFullYear();
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

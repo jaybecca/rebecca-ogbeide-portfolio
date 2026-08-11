@@ -1,0 +1,1497 @@
+/*==================================================
+        CERTIFICATIONS & CONTINUOUS LEARNING
+==================================================*/
+
+.certifications{
+
+    position:relative;
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+    overflow:hidden;
+
+}
+
+
+/*==================================================
+                HEADER
+==================================================*/
+
+.certifications-header{
+
+    max-width:720px;
+
+    margin:0 auto 55px;
+
+    text-align:center;
+
+}
+
+
+.certifications-header h2{
+
+    margin:0 0 20px;
+
+    font-size:
+        clamp(
+            2.2rem,
+            4vw,
+            3.4rem
+        );
+
+    line-height:1.12;
+
+    letter-spacing:-1.5px;
+
+    color:#0F172A;
+
+}
+
+
+.certifications-header h2 span{
+
+    color:#2563EB;
+
+}
+
+
+.certifications-header p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#64748B;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+            QUALIFICATIONS GRID
+==================================================*/
+
+.qualifications-grid{
+
+    max-width:900px;
+
+    margin:0 auto 65px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:22px;
+
+}
+
+
+/*==================================================
+            QUALIFICATION CARD
+==================================================*/
+
+.qualification-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:25px;
+
+    background:#F8FAFC;
+
+    border:
+        1px solid
+        #E2E8F0;
+
+    border-radius:18px;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+}
+
+
+.qualification-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#BFDBFE;
+
+    box-shadow:
+        0 18px 40px
+        rgba(15,23,42,.08);
+
+}
+
+
+/*==================================================
+            QUALIFICATION ICON
+==================================================*/
+
+.qualification-icon{
+
+    width:65px;
+
+    height:65px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:#FFFFFF;
+
+    color:#2563EB;
+
+    font-size:27px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(37,99,235,.10);
+
+}
+
+
+.aws-cert .qualification-icon{
+
+    color:#FF9900;
+
+}
+
+
+.degree-card .qualification-icon{
+
+    color:#7C3AED;
+
+}
+
+
+/*==================================================
+            QUALIFICATION CONTENT
+==================================================*/
+
+.qualification-type{
+
+    display:block;
+
+    margin-bottom:7px;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+}
+
+
+.qualification-content h3{
+
+    margin:0 0 6px;
+
+    color:#0F172A;
+
+    font-size:1rem;
+
+    line-height:1.4;
+
+}
+
+
+.qualification-content p{
+
+    margin:0 0 10px;
+
+    color:#64748B;
+
+    font-size:.78rem;
+
+}
+
+
+.qualification-status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#15803D;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+}
+
+
+.qualification-status i{
+
+    font-size:.75rem;
+
+}
+
+
+/*==================================================
+            CONTINUOUS LEARNING
+==================================================*/
+
+.learning-section{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F8FAFC,
+            #EFF6FF
+        );
+
+    border:
+        1px solid
+        #E2E8F0;
+
+}
+
+
+.learning-intro{
+
+    max-width:700px;
+
+    margin-bottom:35px;
+
+}
+
+
+.learning-label{
+
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    color:#2563EB;
+
+    font-size:.95rem;
+
+    font-weight:800;
+
+    letter-spacing:1.3px;
+
+}
+
+
+.learning-intro h3{
+
+    margin:0 0 12px;
+
+    color:#0F172A;
+
+    font-size:1rem;
+
+}
+
+
+.learning-intro p{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+            LEARNING GRID
+==================================================*/
+
+.learning-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:14px;
+
+}
+
+
+/*==================================================
+            LEARNING ITEM
+==================================================*/
+
+.learning-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:13px;
+
+    padding:17px;
+
+    background:#FFFFFF;
+
+    border:
+        1px solid
+        #E2E8F0;
+
+    border-radius:13px;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease;
+
+}
+
+
+.learning-item:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#BFDBFE;
+
+}
+
+
+.learning-icon{
+
+    width:38px;
+
+    height:38px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:10px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:15px;
+
+}
+
+
+.learning-item h4{
+
+    margin:0 0 5px;
+
+    color:#0F172A;
+
+    font-size:.95rem;
+
+}
+
+
+.learning-item p{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-size:.85rem;
+
+    line-height:1.6;
+
+}
+
+
+/*==================================================
+            LEARNING CTA
+==================================================*/
+
+.learning-cta{
+
+    max-width:1100px;
+
+    margin:22px auto 0;
+
+    padding:20px 25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0F172A,
+            #172554
+        );
+
+    color:#FFFFFF;
+
+}
+
+
+.learning-cta-icon{
+
+    width:45px;
+
+    height:45px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:
+        rgba(37,99,235,.2);
+
+    color:#60A5FA;
+
+}
+
+
+.learning-cta strong{
+
+    display:block;
+
+    margin-bottom:4px;
+
+    font-size:.95rem;
+
+}
+
+
+.learning-cta p{
+
+    margin:0;
+
+    color:#CBD5E1;
+
+    font-size:.85rem;
+
+}
+
+
+/*==================================================
+                TABLET
+==================================================*/
+
+@media(max-width:900px){
+
+    .certifications{
+
+        padding:80px 0;
+
+    }
+
+
+    .learning-section{
+
+        padding:35px;
+
+    }
+
+
+    .learning-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+}
+
+
+/*==================================================
+                MOBILE
+==================================================*/
+
+@media(max-width:650px){
+
+    .certifications{
+
+        padding:70px 0;
+
+    }
+
+
+    .certifications-header{
+
+        margin-bottom:40px;
+
+    }
+
+
+    .certifications-header h2{
+
+        font-size:2.1rem;
+
+    }
+
+
+    .qualifications-grid{
+
+        grid-template-columns:1fr;
+
+        margin-bottom:45px;
+
+    }
+
+
+    .qualification-card{
+
+        padding:20px;
+
+    }
+
+
+    .learning-section{
+
+        padding:25px 18px;
+
+        border-radius:18px;
+
+    }
+
+
+    .learning-intro h3{
+
+        font-size:1.35rem;
+
+    }
+
+
+    .learning-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .learning-cta{
+
+        align-items:flex-start;
+
+        padding:18px;
+
+    }
+
+}
+
+
+/*==================================================
+            SMALL MOBILE
+==================================================*/
+
+@media(max-width:400px){
+
+    .qualification-card{
+
+        gap:13px;
+
+    }
+
+
+    .qualification-icon{
+
+        width:55px;
+
+        height:55px;
+
+        font-size:23px;
+
+    }
+
+
+    .qualification-content h3{
+
+        font-size:.75rem;
+
+    }
+
+
+    .learning-intro p{
+
+        font-size:.75rem;
+
+    }
+
+}
+
+
+
+
+
+/*==================================================
+        PART 8 — CAREER JOURNEY
+==================================================*/
+
+.experience{
+
+    position:relative;
+
+    padding:105px 0;
+
+    background:#F8FAFC;
+
+    overflow:hidden;
+
+}
+
+
+/*==================================================
+                SECTION HEADER
+==================================================*/
+
+.experience-header{
+
+    max-width:720px;
+
+    margin:0 auto 65px;
+
+    text-align:center;
+
+}
+
+
+.experience-header h2{
+
+    margin:0 0 20px;
+
+    color:#0F172A;
+
+    font-size:
+        clamp(
+            2.2rem,
+            4vw,
+            3.4rem
+        );
+
+    line-height:1.12;
+
+    letter-spacing:-1.5px;
+
+}
+
+
+.experience-header h2 span{
+
+    color:#2563EB;
+
+}
+
+
+.experience-header p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+                TIMELINE
+==================================================*/
+
+.experience-timeline{
+
+    position:relative;
+
+    max-width:950px;
+
+    margin:0 auto;
+
+}
+
+
+/* Timeline line */
+
+.experience-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:25px;
+
+    top:0;
+
+    bottom:0;
+
+    width:2px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #2563EB,
+            #60A5FA,
+            #7C3AED
+        );
+
+}
+
+
+/*==================================================
+            EXPERIENCE ITEM
+==================================================*/
+
+.experience-item{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:52px 1fr;
+
+    gap:25px;
+
+    margin-bottom:32px;
+
+}
+
+
+.experience-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/*==================================================
+                TIMELINE MARKER
+==================================================*/
+
+.experience-marker{
+
+    position:relative;
+
+    z-index:2;
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#FFFFFF;
+
+    border:2px solid #2563EB;
+
+    color:#2563EB;
+
+    box-shadow:
+        0 8px 25px
+        rgba(37,99,235,.15);
+
+    font-size:17px;
+
+}
+
+
+.cloud-marker{
+
+    color:#7C3AED;
+
+    border-color:#7C3AED;
+
+    box-shadow:
+        0 8px 25px
+        rgba(124,58,237,.15);
+
+}
+
+
+/*==================================================
+            EXPERIENCE CARD
+==================================================*/
+
+.experience-card{
+
+    padding:30px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:20px;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+}
+
+
+.experience-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#BFDBFE;
+
+    box-shadow:
+        0 20px 45px
+        rgba(15,23,42,.08);
+
+}
+
+
+/* Highlight current career */
+
+.featured-experience{
+
+    border-color:#BFDBFE;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFFFFF,
+            #F8FBFF
+        );
+
+}
+
+
+/*==================================================
+                TOP
+==================================================*/
+
+.experience-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    margin-bottom:17px;
+
+}
+
+
+.experience-category{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#2563EB;
+
+    font-size:.95rem;
+
+    font-weight:800;
+
+    letter-spacing:1.4px;
+
+}
+
+
+.experience-top h3{
+
+    margin:0 0 6px;
+
+    color:#0F172A;
+
+    font-size:1.2rem;
+
+    line-height:1.4;
+
+}
+
+
+.experience-company{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+}
+
+
+.experience-period{
+
+    flex-shrink:0;
+
+    padding:7px 13px;
+
+    border-radius:30px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+}
+
+
+.experience-period.current{
+
+    background:#F3E8FF;
+
+    color:#7C3AED;
+
+}
+
+
+/*==================================================
+            DESCRIPTION
+==================================================*/
+
+.experience-description{
+
+    max-width:780px;
+
+    margin:0 0 20px;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+    line-height:1.85;
+
+}
+
+
+/*==================================================
+                SKILLS
+==================================================*/
+
+.experience-skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+
+}
+
+
+.experience-skills span{
+
+    padding:6px 10px;
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:7px;
+
+    color:#475569;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+}
+
+
+/*==================================================
+            CAREER TRANSITION
+==================================================*/
+
+.career-transition{
+
+    max-width:950px;
+
+    margin:50px auto 0;
+
+    padding:25px 30px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #EFF6FF,
+            #F5F3FF
+        );
+
+    border:
+        1px solid
+        #DBEAFE;
+
+    border-radius:18px;
+
+}
+
+
+.transition-icon{
+
+    width:50px;
+
+    height:50px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:#FFFFFF;
+
+    color:#2563EB;
+
+    font-size:20px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(37,99,235,.10);
+
+}
+
+
+.transition-content > span{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:#2563EB;
+
+    font-size:.85rem;
+
+    font-weight:800;
+
+    letter-spacing:1.3px;
+
+}
+
+
+.transition-content h3{
+
+    margin:0 0 5px;
+
+    color:#0F172A;
+
+    font-size:1rem;
+
+}
+
+
+.transition-content p{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+
+/*==================================================
+            TRANSFERABLE STRENGTHS
+==================================================*/
+
+.experience-strengths{
+
+    max-width:950px;
+
+    margin:25px auto 0;
+
+    padding:35px;
+
+    display:grid;
+
+    grid-template-columns:.9fr 1.6fr;
+
+    gap:40px;
+
+    align-items:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0F172A,
+            #172554
+        );
+
+    border-radius:22px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(15,23,42,.12);
+
+}
+
+
+.strengths-heading > span{
+
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#60A5FA;
+
+    font-size:.95rem;
+
+    font-weight:800;
+
+    letter-spacing:1.4px;
+
+}
+
+
+.strengths-heading h3{
+
+    margin:0;
+
+    color:#FFFFFF;
+
+    font-size:1.35rem;
+
+    line-height:1.4;
+
+}
+
+
+.strengths-heading strong{
+
+    color:#60A5FA;
+
+}
+
+
+/*==================================================
+            STRENGTH GRID
+==================================================*/
+
+.strengths-list{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:10px;
+
+}
+
+
+.strength-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 14px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    border-radius:9px;
+
+    color:#E2E8F0;
+
+    font-size:.95rem;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+
+}
+
+
+.strength-item:hover{
+
+    background:
+        rgba(96,165,250,.12);
+
+    transform:translateY(-2px);
+
+}
+
+
+.strength-item i{
+
+    width:17px;
+
+    color:#60A5FA;
+
+    text-align:center;
+
+}
+
+
+/*==================================================
+                TABLET
+==================================================*/
+
+@media(max-width:900px){
+
+    .experience{
+
+        padding:85px 0;
+
+    }
+
+
+    .experience-strengths{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+}
+
+
+/*==================================================
+                MOBILE
+==================================================*/
+
+@media(max-width:650px){
+
+    .experience{
+
+        padding:70px 0;
+
+    }
+
+
+    .experience-header{
+
+        margin-bottom:45px;
+
+    }
+
+
+    .experience-header h2{
+
+        font-size:2.1rem;
+
+    }
+
+
+    .experience-timeline::before{
+
+        left:19px;
+
+    }
+
+
+    .experience-item{
+
+        grid-template-columns:40px 1fr;
+
+        gap:15px;
+
+        margin-bottom:22px;
+
+    }
+
+
+    .experience-marker{
+
+        width:40px;
+
+        height:40px;
+
+        font-size:14px;
+
+    }
+
+
+    .experience-card{
+
+        padding:20px;
+
+        border-radius:15px;
+
+    }
+
+
+    .experience-top{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+
+    .experience-period{
+
+        align-self:flex-start;
+
+    }
+
+
+    .experience-top h3{
+
+        font-size:1rem;
+
+    }
+
+
+    .experience-description{
+
+        font-size:.95rem;
+
+        line-height:1.75;
+
+    }
+
+
+    .experience-skills span{
+
+        font-size:.95rem;
+
+    }
+
+
+    .career-transition{
+
+        align-items:flex-start;
+
+        padding:20px;
+
+    }
+
+
+    .transition-icon{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:17px;
+
+    }
+
+
+    .transition-content h3{
+
+        font-size:.95rem;
+
+    }
+
+
+    .transition-content p{
+
+        font-size:.95rem;
+
+    }
+
+
+    .experience-strengths{
+
+        padding:25px 20px;
+
+        border-radius:18px;
+
+    }
+
+
+    .strengths-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/*==================================================
+            SMALL MOBILE
+==================================================*/
+
+@media(max-width:400px){
+
+    .experience-card{
+
+        padding:17px;
+
+    }
+
+
+    .experience-top h3{
+
+        font-size:.95rem;
+
+    }
+
+
+    .experience-description{
+
+        font-size:.95rem;
+
+    }
+
+}

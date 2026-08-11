@@ -1,0 +1,5 @@
+user-agent: *
+
+Allow: /
+
+Sitemap: https://portfolio.tampconsulting.space/sitemap.xml

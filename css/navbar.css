@@ -1,0 +1,186 @@
+/*=========================================
+            NAV CONTAINER
+=========================================*/
+
+.nav-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:90px;
+
+}
+
+/*=========================================
+            NAV LINKS
+=========================================*/
+
+.nav-links{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+.nav-links a{
+
+    color:var(--text);
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:var(--transition);
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+
+    color:var(--primary);
+
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+
+/*=========================================
+            NAV BUTTON
+=========================================*/
+
+.nav-btn{
+
+    padding:14px 32px;
+
+    border-radius:50px;
+
+    color:#000000;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.25);
+
+}
+
+.nav-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+
+/*=========================================
+            MOBILE MENU
+=========================================*/
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:28px;
+
+    color:var(--dark);
+
+    cursor:pointer;
+
+}
+
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+    .nav-btn{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    .navbar{
+
+        position:absolute;
+
+        top:90px;
+
+        left:-100%;
+
+        width:100%;
+
+        background:#fff;
+
+        transition:.4s;
+
+        box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+        padding:35px 0;
+
+    }
+
+    .navbar.active{
+
+        left:0;
+
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:30px;
+
+    }
+
+}
