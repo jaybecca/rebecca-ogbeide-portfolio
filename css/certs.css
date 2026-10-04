@@ -1495,3 +1495,28 @@
     }
 
 }
+/*==================================================
+        CERTIFICATE ACTIONS — PREMIUM
+==================================================*/
+.qualification-actions{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+.cert-btn{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border-radius:10px;text-decoration:none;font-size:.72rem;font-weight:800;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.cert-btn:hover{transform:translateY(-2px)}
+.cert-btn-primary{background:#0F172A;color:#fff;box-shadow:0 8px 18px rgba(15,23,42,.12)}
+.cert-btn-primary:hover{background:#2563EB}
+.cert-btn-secondary{background:#EFF6FF;color:#1D4ED8;border:1px solid #BFDBFE}
+.cert-btn-secondary:hover{background:#DBEAFE}
+.ibm-cert .qualification-icon{color:#2563EB}
+.learning-credential{max-width:1100px;margin:22px auto 0;padding:20px 25px;display:flex;align-items:center;justify-content:space-between;gap:20px;border:1px solid #E2E8F0;border-radius:16px;background:#fff}
+.learning-credential h3{margin:0 0 5px;color:#0F172A}
+.learning-credential p{margin:0;color:#64748B;font-size:.88rem}
+@media(max-width:650px){.learning-credential{align-items:flex-start;flex-direction:column}.cert-btn{width:100%;justify-content:center}}
+
+/*==================================================
+        PREMIUM CREDENTIAL NOTE
+==================================================*/
+.credential-note{display:inline-flex;align-items:center;gap:8px;margin-top:15px;padding:8px 13px;border:1px solid #DBEAFE;border-radius:999px;background:#F8FAFC;color:#64748B;font-size:.72rem;font-weight:600}.credential-note i{color:#10B981}
+
+/*==================================================
+        PREMIUM CREDENTIAL NOTE
+==================================================*/
+.credential-note{display:inline-flex;align-items:center;gap:8px;margin-top:15px;padding:8px 13px;border:1px solid #DBEAFE;border-radius:999px;background:#F8FAFC;color:#64748B;font-size:.72rem;font-weight:600}.credential-note i{color:#10B981}

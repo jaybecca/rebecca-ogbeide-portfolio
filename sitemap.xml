@@ -1,38 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<urlset
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-
-<loc>https://portfolio.tampconsulting.space/</loc>
-
-<priority>1.0</priority>
-
-</url>
-
-<url>
-
-<loc>https://portfolio.tampconsulting.space/#about</loc>
-
-<priority>0.8</priority>
-
-</url>
-
-<url>
-
-<loc>https://portfolio.tampconsulting.space/#services</loc>
-
-<priority>0.8</priority>
-
-</url>
-
-<url>
-
-<loc>https://portfolio.tampconsulting.space/#contact</loc>
-
-<priority>0.8</priority>
-
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://portfolio.tampconsulting.space/</loc><priority>1.0</priority></url>
+  <url><loc>https://portfolio.tampconsulting.space/blog.html</loc><priority>0.8</priority></url>
+  <url><loc>https://portfolio.tampconsulting.space/projects/aws-scalable-infrastructure/</loc><priority>0.7</priority></url>
+  <url><loc>https://portfolio.tampconsulting.space/projects/jenkins-cicd/</loc><priority>0.7</priority></url>
+  <url><loc>https://portfolio.tampconsulting.space/projects/docker-multi-container/</loc><priority>0.7</priority></url>
+  <url><loc>https://portfolio.tampconsulting.space/projects/cloud-deployment/</loc><priority>0.7</priority></url>
+  <url><loc>https://portfolio.tampconsulting.space/projects/tamp-consulting/</loc><priority>0.7</priority></url>
+  <url><loc>https://portfolio.tampconsulting.space/projects/tamp-education/</loc><priority>0.7</priority></url>
+  <url><loc>https://portfolio.tampconsulting.space/projects/tampops/</loc><priority>0.7</priority></url>
 </urlset>

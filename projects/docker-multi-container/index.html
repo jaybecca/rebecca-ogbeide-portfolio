@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Multi-Container Docker Application | Rebecca Ogbeide
+    </title>
+
+    <meta
+        name="description"
+        content="Docker multi-container application case study using Docker, Docker Compose, Nginx and Linux.">
+
+    <meta
+        name="author"
+        content="Rebecca Ogbeide">
+
+    <link
+        rel="stylesheet"
+        href="../project.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+           <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="project-header">
+
+    <div class="project-container project-nav">
+
+        <a
+            href="../../index.html"
+            class="project-logo">
+
+            Rebecca <span>Ogbeide</span>
+
+        </a>
+
+
+        <a
+            href="../../index.html#projects"
+            class="project-back">
+
+            <i class="fas fa-arrow-left"></i>
+
+            Back to Projects
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================================
+     MAIN CONTENT
+========================================== -->
+
+<main>
+
+
+    <!-- ==========================================
+         PROJECT HERO
+    =========================================== -->
+
+    <section class="project-hero">
+
+        <div class="project-container project-hero-grid">
+
+
+            <!-- Hero Content -->
+
+            <div>
+
+                <span class="project-category">
+                    CONTAINERS
+                </span>
+
+
+                <h1>
+
+                    Multi-Container
+                    <span>Application</span>
+
+                </h1>
+
+
+                <p class="project-hero-description">
+
+                    A containerized application environment using
+                    Docker, Docker Compose, Nginx and Linux to create
+                    consistent, reproducible and portable development
+                    and deployment workflows.
+
+                </p>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="https://github.com/jaybecca/devops-project"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-button project-button-primary">
+
+                        <i class="fab fa-github"></i>
+
+                        View GitHub
+
+                    </a>
+
+
+                    <a
+                        href="../../index.html#contact"
+                        class="project-button project-button-secondary">
+
+                        Discuss a Project
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Visual -->
+
+            <div class="project-visual">
+
+                <div class="terminal">
+
+
+                    <div class="terminal-top">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="terminal-line">
+
+                        <span class="terminal-command">
+
+                            $ docker compose up -d
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="terminal-line terminal-success">
+
+                        ✓ Network created
+
+                    </div>
+
+
+                    <div class="terminal-line terminal-success">
+
+                        ✓ Application container started
+
+                    </div>
+
+
+                    <div class="terminal-line terminal-success">
+
+                        ✓ Nginx container started
+
+                    </div>
+
+
+                    <div class="terminal-line terminal-success">
+
+                        ✓ Services healthy
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         PROJECT CONTENT
+    =========================================== -->
+
+    <section class="project-content">
+
+        <div class="project-container project-content-grid">
+
+
+            <!-- Main Article -->
+
+            <article>
+
+
+                <!-- Project Overview -->
+
+                <h2>
+                    Project Overview
+                </h2>
+
+
+                <p>
+
+                    This project explores containerization as a
+                    practical approach to packaging application
+                    services and their dependencies into predictable,
+                    portable and reproducible environments.
+
+                </p>
+
+
+                <p>
+
+                    The application uses multiple containers managed
+                    through Docker Compose, allowing the individual
+                    services to communicate through a defined
+                    container network while remaining isolated from
+                    the host environment.
+
+                </p>
+
+
+                <!-- Project Metrics -->
+
+                <div class="project-metrics">
+
+
+                    <div class="metric">
+
+                        <strong>
+                            Containerization
+                        </strong>
+
+                        <span>
+                            Docker
+                        </span>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <strong>
+                            Orchestration
+                        </strong>
+
+                        <span>
+                            Docker Compose
+                        </span>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <strong>
+                            Reverse Proxy
+                        </strong>
+
+                        <span>
+                            Nginx
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Architecture -->
+
+                <h3>
+                    Architecture
+                </h3>
+
+
+                <p>
+
+                    Docker Compose defines the application services,
+                    their configuration and their relationships.
+                    Nginx can act as the entry point for incoming
+                    web traffic and route requests to the appropriate
+                    application service.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Multiple application containers.
+                    </li>
+
+                    <li>
+                        Individual Dockerfiles for service images.
+                    </li>
+
+                    <li>
+                        Docker Compose for multi-service management.
+                    </li>
+
+                    <li>
+                        Internal container networking.
+                    </li>
+
+                    <li>
+                        Nginx reverse proxy configuration.
+                    </li>
+
+                    <li>
+                        Linux-based container environments.
+                    </li>
+
+                    <li>
+                        Environment-specific configuration.
+                    </li>
+
+                    <li>
+                        Reproducible local development environment.
+                    </li>
+
+                </ul>
+
+
+
+                <!-- Key Features -->
+
+                <h3>
+                    Key Features
+                </h3>
+
+
+                <ul>
+
+                    <li>
+                        Containerized application services.
+                    </li>
+
+                    <li>
+                        Service-to-service communication through
+                        Docker networking.
+                    </li>
+
+                    <li>
+                        Centralized multi-container configuration
+                        through Docker Compose.
+                    </li>
+
+                    <li>
+                        Nginx reverse proxy and web traffic routing.
+                    </li>
+
+                    <li>
+                        Isolated application environments.
+                    </li>
+
+                    <li>
+                        Reproducible application startup and teardown.
+                    </li>
+
+                    <li>
+                        Portable development environment.
+                    </li>
+
+                    <li>
+                        Foundation for future CI/CD integration.
+                    </li>
+
+                </ul>
+
+
+
+                <!-- Why Containers -->
+
+                <h3>
+                    Why Containers?
+                </h3>
+
+
+                <p>
+
+                    Containers make the application environment part
+                    of the application definition. Instead of relying
+                    on manually configured machines, the required
+                    runtime environment can be described through
+                    Dockerfiles and Compose configuration.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Consistent environments.
+                    </li>
+
+                    <li>
+                        Repeatable deployments.
+                    </li>
+
+                    <li>
+                        Isolation between services.
+                    </li>
+
+                    <li>
+                        Easier local development.
+                    </li>
+
+                    <li>
+                        Clearer application dependencies.
+                    </li>
+
+                    <li>
+                        Easier testing before deployment.
+                    </li>
+
+                    <li>
+                        Improved portability between environments.
+                    </li>
+
+                </ul>
+
+
+
+                <!-- Engineering Workflow -->
+
+                <h3>
+                    Engineering Workflow
+                </h3>
+
+
+                <p>
+
+                    The project follows a workflow that can later
+                    be connected to GitHub Actions and a broader
+                    DevOps delivery pipeline.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Build application Docker images.
+                    </li>
+
+                    <li>
+                        Define services with Docker Compose.
+                    </li>
+
+                    <li>
+                        Create the container network.
+                    </li>
+
+                    <li>
+                        Start and validate the application services.
+                    </li>
+
+                    <li>
+                        Test communication between containers.
+                    </li>
+
+                    <li>
+                        Validate Nginx routing.
+                    </li>
+
+                    <li>
+                        Inspect logs and troubleshoot failed services.
+                    </li>
+
+                    <li>
+                        Stop and recreate the environment consistently.
+                    </li>
+
+                </ul>
+
+
+
+                <!-- What I Learned -->
+
+                <h3>
+                    What I Learned
+                </h3>
+
+
+                <p>
+
+                    Containerization is useful because it makes the
+                    environment part of the application definition.
+                    This reduces the gap between development and
+                    deployment environments.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Containers isolate application environments.
+                    </li>
+
+                    <li>
+                        Container networking is fundamental to
+                        distributed applications.
+                    </li>
+
+                    <li>
+                        Docker Compose simplifies local multi-service
+                        development.
+                    </li>
+
+                    <li>
+                        Images should be kept small and purposeful.
+                    </li>
+
+                    <li>
+                        Configuration should be separated from
+                        application code.
+                    </li>
+
+                    <li>
+                        Service dependencies need to be understood
+                        before troubleshooting.
+                    </li>
+
+                    <li>
+                        Logs are essential when diagnosing container
+                        failures.
+                    </li>
+
+                    <li>
+                        Reproducibility is one of the biggest benefits
+                        of containerized development.
+                    </li>
+
+                </ul>
+
+
+
+                <!-- Future Engineering Roadmap -->
+
+                <h3>
+                    Future Engineering Roadmap
+                </h3>
+
+
+                <p>
+
+                    This project provides a foundation for extending
+                    the application into a broader DevSecOps workflow
+                    involving source control, automated testing,
+                    Kubernetes and cloud deployment.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Commit and maintain the project in GitHub.
+                    </li>
+
+                    <li>
+                        Add GitHub Actions for CI/CD automation.
+                    </li>
+
+                    <li>
+                        Add automated Docker image builds.
+                    </li>
+
+                    <li>
+                        Introduce security and vulnerability scanning.
+                    </li>
+
+                    <li>
+                        Deploy the containers locally with Kubernetes
+                        using Minikube.
+                    </li>
+
+                    <li>
+                        Validate Kubernetes deployments and services.
+                    </li>
+
+                    <li>
+                        Extend the deployment workflow toward AWS.
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 PROJECT SIDEBAR
+            =========================================== -->
+
+            <aside class="project-sidebar">
+
+
+                <!-- Technologies -->
+
+                <div class="project-sidebar-card">
+
+                    <h3>
+                        Technologies
+                    </h3>
+
+
+                    <ul class="tech-list">
+
+                        <li>
+                            Docker
+                        </li>
+
+                        <li>
+                            Docker Compose
+                        </li>
+
+                        <li>
+                            Nginx
+                        </li>
+
+                        <li>
+                            Linux
+                        </li>
+
+                        <li>
+                            HTML
+                        </li>
+
+                        <li>
+                            CSS
+                        </li>
+
+                        <li>
+                            JavaScript
+                        </li>
+
+                        <li>
+                            Git
+                        </li>
+
+                        <li>
+                            GitHub
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Engineering Focus -->
+
+                <div class="project-sidebar-card">
+
+                    <h3>
+                        Engineering Focus
+                    </h3>
+
+
+                    <ul class="tech-list">
+
+                        <li>
+                            Containerization
+                        </li>
+
+                        <li>
+                            Service Networking
+                        </li>
+
+                        <li>
+                            Environment Reproducibility
+                        </li>
+
+                        <li>
+                            Application Deployment
+                        </li>
+
+                        <li>
+                            Linux
+                        </li>
+
+                        <li>
+                            Automation
+                        </li>
+
+                        <li>
+                            DevOps
+                        </li>
+
+                        <li>
+                            CI/CD Readiness
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="project-footer">
+
+    <div class="project-container project-footer-inner">
+
+        <span>
+
+            ©
+            <span data-project-year></span>
+
+            Rebecca Ogbeide
+
+        </span>
+
+
+        <a href="../../index.html#contact">
+
+            Let's Work Together
+
+        </a>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="../project.js"></script>
+
+
+</body>
+
+</html>
