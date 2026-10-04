@@ -76,7 +76,7 @@ jobs:
           for path in html_files:
               text = path.read_text(encoding="utf-8", errors="replace")
 
-              if re.search(r'<<<<<<<|=======|>>>>>>>', text):
+              if re.search(r'(?m)^(<<<<<<< .+|=======|>>>>>>> .+)$', text):
                   print(f"ERROR: Merge-conflict marker found in {path}")
                   failed = True
 
