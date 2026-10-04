@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAMP Marketplace | Rebecca Ogbeide</title>
+<meta name="description" content="TAMP Marketplace full-stack affiliate discovery and comparison marketplace case study by Rebecca Ogbeide, covering Next.js, PostgreSQL, Redis, testing and DevSecOps engineering.">
+<meta name="author" content="Rebecca Ogbeide">
+<link rel="stylesheet" href="../project.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.png">
+</head>
+<body>
+<header class="project-header"><div class="project-container project-nav">
+<a href="../../index.html" class="project-logo">Rebecca <span>Ogbeide</span></a>
+<a href="../../index.html#projects" class="project-back"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+</div></header>
+<main>
+<section class="project-hero"><div class="project-container project-hero-grid"><div>
+<span class="project-category">FULL-STACK • DEVSECOPS</span>
+<h1>TAMP Marketplace <span>Digital Commerce Platform</span></h1>
+<p class="project-hero-description">A full-stack affiliate discovery and comparison marketplace designed around product discovery, merchant offers, search, authentication, localized shopping experiences and a production-minded security workflow.</p>
+<div class="project-actions"><a href="https://marketplace.tampconsulting.space" class="project-button project-button-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Website</a><a href="../../index.html#contact" class="project-button project-button-secondary"><i class="fas fa-comments"></i> Discuss a Project</a></div>
+</div><div class="project-visual"><div class="terminal"><div class="terminal-top"><span></span><span></span><span></span></div>
+<div class="terminal-line terminal-success">✓ Next.js full-stack application</div><div class="terminal-line terminal-success">✓ PostgreSQL system of record</div><div class="terminal-line terminal-success">✓ Redis cache / queue foundation</div><div class="terminal-line terminal-success">✓ Automated tests and quality gates</div><div class="terminal-line terminal-success">✓ Security-focused production foundation</div>
+</div></div></div></section>
+<section class="project-content"><div class="project-container project-content-grid"><article>
+<h2>Project Overview: TAMP Marketplace — Full-Stack Commerce &amp; Discovery</h2>
+<p>TAMP Marketplace is a business-focused digital marketplace concept built to help customers discover products, compare merchant offers and continue to the merchant for checkout. TAMP does not hold inventory or process merchant fulfillment; the platform is designed around affiliate discovery and comparison.</p>
+<p>The project moves my portfolio beyond static websites into full-stack application engineering. It combines a Next.js frontend and server/API routes with PostgreSQL for persistent data and Redis as a cache and queue foundation.</p>
+<p>The source also includes a production-oriented DevSecOps foundation covering automated testing, linting, dependency auditing, CodeQL SAST, dependency review and production builds.</p>
+<div class="project-metrics"><div class="metric"><strong>Architecture</strong><span>Next.js Full Stack</span></div><div class="metric"><strong>Data</strong><span>PostgreSQL + Redis</span></div><div class="metric"><strong>Status</strong><span>Active Development</span></div></div>
+<h3>Core Marketplace Features</h3><ul><li>Product discovery with search, sorting and category filtering.</li><li>Product detail pages with merchant offer comparison.</li><li>Destination-aware shopping guidance and merchant source labels.</li><li>Saved products and shopping lists using browser storage.</li><li>Deals and category discovery experiences.</li><li>Authentication foundation backed by PostgreSQL.</li><li>Localization and country-aware shopping preferences.</li><li>Affiliate integration foundations for merchant partners.</li></ul>
+<h3>Application Architecture</h3><p>The platform uses one deployable Next.js application containing the frontend and server/API routes. PostgreSQL acts as the system of record, while Redis provides a cache and queue foundation. Docker provides reproducible local infrastructure and a production container image.</p><ul><li>Next.js + React application layer.</li><li>Server/API routes for application functionality.</li><li>PostgreSQL database for persistent marketplace and account data.</li><li>Redis for caching, queue-oriented infrastructure and rate-limiting support.</li><li>Docker Compose for repeatable local infrastructure.</li><li>Environment variables for server-only secrets and credentials.</li></ul>
+<h3>DevSecOps &amp; Quality Engineering</h3><p>The project demonstrates a more mature delivery mindset by making quality and security gates part of the repository workflow. Pull requests and pushes to the protected default branch are designed to run foundation validation, automated tests, ESLint, production builds, dependency auditing, CodeQL SAST and dependency review.</p><ul><li>GitHub Actions CI for repeatable validation.</li><li>Automated application tests.</li><li>ESLint for code-quality checks.</li><li>Dependency audit for known package vulnerabilities.</li><li>CodeQL for static application security testing.</li><li>Dependency Review for pull-request security hygiene.</li><li>Production build validation before release.</li></ul>
+<h3>Security &amp; Secrets Management</h3><p>Production credentials are intentionally separated from source code. Database credentials, Redis credentials, OAuth values, affiliate credentials and email/API secrets are designed to live in encrypted hosting-provider secret stores rather than in Git.</p><ul><li>Never commit production secrets or database passwords.</li><li>Use environment variables for server-only configuration.</li><li>Use protected branches and required CI checks.</li><li>Use rate limiting to reduce abuse against sensitive application endpoints.</li><li>Review dependencies and security findings before release.</li></ul>
+<h3>Engineering Lessons</h3><p>This project strengthened my understanding of the difference between building a website and engineering an application. A marketplace has to consider data modeling, authentication, search, merchant relationships, localization, performance, security, testing and operational readiness together.</p><p>It also reinforced the value of automated quality gates. Testing, linting, dependency checks and SAST become repeatable engineering controls instead of manual tasks performed only when something goes wrong.</p>
+<h3>Future Engineering Roadmap</h3><ul><li>Continue production catalog and merchant integrations.</li><li>Expand automated test coverage and release gates.</li><li>Complete managed PostgreSQL and Redis production configuration.</li><li>Continue affiliate integrations and merchant deep-link workflows.</li><li>Strengthen observability, monitoring and production operations.</li><li>Continue security hardening as the platform approaches launch.</li></ul>
+</article><aside class="project-sidebar"><div class="project-sidebar-card"><h3>Technologies</h3><ul class="tech-list"><li>Next.js</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>GitHub Actions</li><li>CodeQL</li><li>npm audit</li><li>ESLint</li><li>Cloudflare</li><li>Sentry</li></ul></div><div class="project-sidebar-card"><h3>Engineering Focus</h3><ul class="tech-list"><li>Full-Stack Development</li><li>Database Architecture</li><li>Authentication</li><li>Search &amp; Discovery</li><li>CI/CD</li><li>SAST</li><li>Dependency Security</li><li>Secrets Management</li><li>Containerization</li><li>Production Readiness</li></ul></div></aside></div></section>
+</main>
+<footer class="project-footer"><div class="project-container project-footer-inner"><span>© <span data-project-year></span> Rebecca Ogbeide</span><a href="../../index.html#contact">Let's Work Together</a></div></footer>
+<script src="../project.js"></script>
+</body>
+</html>

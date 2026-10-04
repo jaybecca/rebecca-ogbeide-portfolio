@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+       Jenkins CI/CD Pipeline | Rebecca Ogbeide
+    </title>
+
+    <meta
+        name="description"
+        content="Jenkins CI/CD pipeline case study demonstrating automated builds, testing, Docker containerization, GitHub integration and deployment automation.">
+
+    <link
+        rel="stylesheet"
+        href="../project.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+           <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.png">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="project-header">
+
+    <div class="project-container project-nav">
+
+        <a
+            href="../../index.html"
+            class="project-logo">
+
+            Rebecca <span>Ogbeide</span>
+
+        </a>
+
+
+        <a
+            href="../../index.html#projects"
+            class="project-back">
+
+            <i class="fas fa-arrow-left"></i>
+
+            Back to Projects
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ==========================================
+     MAIN
+========================================== -->
+
+<main>
+
+
+<!-- ==========================================
+     PROJECT HERO
+========================================== -->
+
+<section class="project-hero">
+
+    <div class="project-container project-hero-grid">
+
+
+        <!-- Hero Content -->
+
+        <div>
+
+            <span class="project-category">
+                DEVOPS
+            </span>
+
+
+            <h1>
+
+                Jenkins
+
+                <span>
+                    CI/CD Pipeline
+                </span>
+
+            </h1>
+
+
+            <p class="project-hero-description">
+
+                An automated CI/CD workflow using Jenkins and Docker to improve build consistency,
+                repeatable testing, deployment and engineering feedback. The project repository is
+                planned at GitHub and will be developed as a dedicated Jenkins pipeline implementation.
+
+            </p>
+
+
+            <div class="project-actions">
+
+                <a
+                    href="https://github.com/Jenkins-Pipeline.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-button project-button-primary">
+
+                    <i class="fab fa-github"></i>
+
+                    View GitHub
+
+                </a>
+
+
+                <a
+                    href="../../index.html#contact"
+                    class="project-button project-button-secondary">
+
+                    Discuss a Project
+
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Terminal Visual -->
+
+        <div class="project-visual">
+
+            <div class="terminal">
+
+                <div class="terminal-top">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <div class="terminal-line">
+
+                    <span class="terminal-command">
+                        $ git push
+                    </span>
+
+                </div>
+
+
+                <div class="terminal-line">
+
+                    → Jenkins webhook triggered
+
+                </div>
+
+
+                <div class="terminal-line">
+
+                    → Build started
+
+                </div>
+
+
+                <div class="terminal-line">
+
+                    → Tests running
+
+                </div>
+
+
+                <div class="terminal-line terminal-success">
+
+                    ✓ Tests passed
+
+                </div>
+
+
+                <div class="terminal-line terminal-success">
+
+                    ✓ Docker image built
+
+                </div>
+
+
+                <div class="terminal-line terminal-success">
+
+                    ✓ Deployment complete
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PROJECT CONTENT
+========================================== -->
+
+<section class="project-content">
+
+    <div class="project-container project-content-grid">
+
+
+        <!-- Main Article -->
+
+        <article>
+
+
+            <!-- Overview -->
+
+            <h2>
+                Project Overview
+            </h2>
+
+
+            <p>
+
+                This project demonstrates how source-control events
+                can trigger an automated delivery pipeline instead
+                of relying on repetitive manual build and deployment
+                steps.
+
+            </p>
+
+
+            <p>
+
+                The workflow connects GitHub, Jenkins and Docker to
+                create a repeatable process for validating source
+                code, building application artifacts and preparing
+                deployments.
+
+            </p>
+
+
+            <p>
+
+                The project focuses on replacing manual deployment
+                activities with automation while providing faster
+                feedback when changes introduce errors or unexpected
+                behavior.
+
+            </p>
+
+
+            <!-- Project Metrics -->
+
+            <div class="project-metrics">
+
+
+                <div class="metric">
+
+                    <strong>
+                        Automation
+                    </strong>
+
+                    <span>
+                        Jenkins
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <strong>
+                        Source Control
+                    </strong>
+
+                    <span>
+                        GitHub
+                    </span>
+
+                </div>
+
+
+                <div class="metric">
+
+                    <strong>
+                        Containerization
+                    </strong>
+
+                    <span>
+                        Docker
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Pipeline Flow -->
+
+            <h3>
+                Pipeline Flow
+            </h3>
+
+
+            <p>
+
+                The pipeline follows a sequence of automated stages
+                designed to provide feedback and prevent invalid
+                changes from progressing through the delivery
+                workflow.
+
+            </p>
+
+
+            <ul>
+
+                <li>
+                    Developer pushes changes to GitHub.
+                </li>
+
+                <li>
+                    Jenkins receives the repository event.
+                </li>
+
+                <li>
+                    Jenkins checks out the latest source code.
+                </li>
+
+                <li>
+                    Automated validation and tests are executed.
+                </li>
+
+                <li>
+                    A Docker image is built from the application.
+                </li>
+
+                <li>
+                    The container image is validated before deployment.
+                </li>
+
+                <li>
+                    The application is prepared for deployment.
+                </li>
+
+                <li>
+                    Pipeline results provide feedback to the developer.
+                </li>
+
+            </ul>
+
+
+            <!-- Key Features -->
+
+            <h3>
+                Key Features
+            </h3>
+
+
+            <ul>
+
+                <li>
+                    GitHub repository integration.
+                </li>
+
+                <li>
+                    Jenkins pipeline automation.
+                </li>
+
+                <li>
+                    Automated source-code checkout.
+                </li>
+
+                <li>
+                    Automated builds.
+                </li>
+
+                <li>
+                    Automated testing and validation.
+                </li>
+
+                <li>
+                    Docker image creation.
+                </li>
+
+                <li>
+                    Deployment automation.
+                </li>
+
+                <li>
+                    Pipeline stages with clear responsibilities.
+                </li>
+
+                <li>
+                    Build and deployment feedback.
+                </li>
+
+                <li>
+                    Repeatable delivery workflow.
+                </li>
+
+            </ul>
+
+
+            <!-- Engineering Goals -->
+
+            <h3>
+                Engineering Goals
+            </h3>
+
+
+            <ul>
+
+                <li>
+                    Reduce repetitive manual deployment work.
+                </li>
+
+                <li>
+                    Make application delivery repeatable.
+                </li>
+
+                <li>
+                    Detect problems earlier in the development process.
+                </li>
+
+                <li>
+                    Improve deployment consistency.
+                </li>
+
+                <li>
+                    Create a foundation for continuous delivery.
+                </li>
+
+                <li>
+                    Integrate containerization into the delivery process.
+                </li>
+
+            </ul>
+
+
+            <!-- Engineering Lessons -->
+
+            <h3>
+                Engineering Lessons
+            </h3>
+
+
+            <p>
+
+                The project reinforced the importance of repeatability.
+                A useful CI/CD pipeline should provide rapid feedback
+                while reducing the amount of manual work required to
+                move an application from source code toward deployment.
+
+            </p>
+
+
+            <ul>
+
+                <li>
+                    CI/CD is fundamentally about feedback and repeatability.
+                </li>
+
+                <li>
+                    Pipeline stages should have clear responsibilities.
+                </li>
+
+                <li>
+                    Failed builds should prevent unsafe deployments
+                    from progressing.
+                </li>
+
+                <li>
+                    Automation exposes inconsistencies that manual
+                    processes can easily hide.
+                </li>
+
+                <li>
+                    Deployment pipelines should be treated as
+                    production engineering code.
+                </li>
+
+                <li>
+                    Containerization makes application packaging
+                    more predictable across environments.
+                </li>
+
+                <li>
+                    Source control should remain the central reference
+                    point for application changes.
+                </li>
+
+            </ul>
+
+
+            <!-- Future Improvements -->
+
+            <h3>
+                Future Improvements
+            </h3>
+
+
+            <p>
+
+                The pipeline can be extended into a broader DevSecOps
+                workflow by introducing automated security scanning,
+                infrastructure validation, container image scanning,
+                Kubernetes deployment and cloud infrastructure
+                provisioning.
+
+            </p>
+
+
+            <ul>
+
+                <li>
+                    Add automated security scanning.
+                </li>
+
+                <li>
+                    Add Docker image vulnerability scanning.
+                </li>
+
+                <li>
+                    Add infrastructure validation with Terraform.
+                </li>
+
+                <li>
+                    Integrate Kubernetes deployment workflows.
+                </li>
+
+                <li>
+                    Keep Jenkins as the pipeline orchestrator while expanding the build, test and deployment stages.
+                </li>
+
+                <li>
+                    Extend deployment automation toward AWS infrastructure.
+                </li>
+
+            </ul>
+
+
+        </article>
+
+
+        <!-- ==========================================
+             SIDEBAR
+        =========================================== -->
+
+        <aside class="project-sidebar">
+
+
+            <div class="project-sidebar-card">
+
+                <h3>
+                    Technologies
+                </h3>
+
+
+                <ul class="tech-list">
+
+                    <li>
+                        Jenkins
+                    </li>
+
+                    <li>
+                        GitHub
+                    </li>
+
+                    <li>
+                        Git
+                    </li>
+
+                    <li>
+                        Docker
+                    </li>
+
+                    <li>
+                        Linux
+                    </li>
+
+                    <li>
+                        Shell
+                    </li>
+
+                    <li>
+                        CI/CD
+                    </li>
+
+                    <li>
+                        Webhooks
+                    </li>
+
+                    <li>
+                        Containerization
+                    </li>
+
+                    <li>
+                        Automation
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="project-sidebar-card">
+
+                <h3>
+                    Engineering Focus
+                </h3>
+
+
+                <ul class="tech-list">
+
+                    <li>
+                        Continuous Integration
+                    </li>
+
+                    <li>
+                        Continuous Delivery
+                    </li>
+
+                    <li>
+                        Build Automation
+                    </li>
+
+                    <li>
+                        Automated Testing
+                    </li>
+
+                    <li>
+                        Container Builds
+                    </li>
+
+                    <li>
+                        Deployment Automation
+                    </li>
+
+                    <li>
+                        DevOps Practices
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </aside>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="project-footer">
+
+    <div class="project-container project-footer-inner">
+
+        <span>
+
+            © <span data-project-year></span>
+
+            Rebecca Ogbeide
+
+        </span>
+
+
+        <a href="../../index.html#contact">
+
+            Let's Work Together
+
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="../project.js"></script>
+
+
+</body>
+
+</html>
