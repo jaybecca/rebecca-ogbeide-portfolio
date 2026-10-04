@@ -1,0 +1,139 @@
+name: Portfolio CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate Portfolio
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          required_files=(
+            "index.html"
+            "404.html"
+            "blog.html"
+            "robots.txt"
+            "sitemap.xml"
+            "site.webmanifest"
+            "Rebecca-Ogbeide-CV.pdf"
+            "certificates/associate-cipm.pdf"
+            "certificates/cipm-diploma.pdf"
+            "certificates/ielts.pdf"
+            "certificates/nimc-chartered-certificate.pdf"
+            "projects/tamp-marketplace/index.html"
+            "projects/tampops/index.html"
+            "projects/tamp-consulting/index.html"
+            "projects/tamp-education/index.html"
+            "projects/aws-scalable-infrastructure/index.html"
+            "projects/cloud-deployment/index.html"
+            "projects/docker-multi-container/index.html"
+            "projects/jenkins-cicd/index.html"
+          )
+
+          for file in "${required_files[@]}"; do
+            if [[ ! -f "$file" ]]; then
+              echo "ERROR: Missing required file: $file"
+              exit 1
+            fi
+            echo "OK: $file"
+          done
+
+      - name: Validate HTML documents
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          html_files = sorted(Path(".").rglob("*.html"))
+
+          if not html_files:
+              print("ERROR: No HTML files found.")
+              sys.exit(1)
+
+          failed = False
+
+          for path in html_files:
+              text = path.read_text(encoding="utf-8", errors="replace")
+
+              if re.search(r'<<<<<<<|=======|>>>>>>>', text):
+                  print(f"ERROR: Merge-conflict marker found in {path}")
+                  failed = True
+
+              if not re.search(r'<title\b[^>]*>.*?</title>', text, re.I | re.S):
+                  print(f"ERROR: Missing <title> in {path}")
+                  failed = True
+
+              if not re.search(
+                  r'<meta\b[^>]*name=["\']description["\'][^>]*>',
+                  text,
+                  re.I
+              ):
+                  print(f"ERROR: Missing meta description in {path}")
+                  failed = True
+
+              print(f"Validated: {path}")
+
+          if failed:
+              sys.exit(1)
+
+          print(f"\nSUCCESS: Validated {len(html_files)} HTML documents.")
+          PY
+
+      - name: Validate key portfolio content
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          grep -qi "TAMP Marketplace" index.html
+          grep -qi "tamp-marketplace" index.html
+          grep -qi "TAMP Marketplace" projects/tamp-marketplace/index.html
+
+          echo "OK: TAMP Marketplace is present."
+
+      - name: Check for accidentally committed secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if grep -RniE \
+            --exclude-dir=.git \
+            --exclude='*.min.js' \
+            --exclude='*.pdf' \
+            --exclude='portfolio-ci.yml' \
+            '(BEGIN (RSA|DSA|EC|OPENSSH) PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{36,})' \
+            .; then
+            echo "ERROR: Possible secret detected."
+            exit 1
+          fi
+
+          echo "OK: No obvious hard-coded secret patterns detected."
+
+      - name: CI summary
+        run: |
+          echo "========================================"
+          echo "Portfolio CI validation passed"
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Commit: $GITHUB_SHA"
+          echo "Branch: $GITHUB_REF_NAME"
+          echo "========================================"
