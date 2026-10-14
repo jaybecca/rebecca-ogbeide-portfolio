@@ -1155,3 +1155,10 @@ transform:translateY(0);
         overflow-wrap: break-word;
     }
 }
+
+/* Mobile: remove the hero scroll indicator */
+@media (max-width: 768px) {
+    .scroll-indicator {
+        display: none !important;
+    }
+}
