@@ -1113,3 +1113,34 @@ transform:translateY(0);
         z-index: 5;
     }
 }
+
+/* Small-screen hero: correct horizontal alignment */
+@media (max-width: 480px) {
+    .hero-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+    .hero-content,
+    .hero-visual,
+    .hero-image {
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
