@@ -1074,3 +1074,42 @@ transform:translateY(0);
     }
 
 }
+/* Mobile hero heading: prevent right-edge clipping */
+@media (max-width: 850px) {
+    .hero-content {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-content h1 {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2px;
+        padding-right: 2px;
+        text-align: center;
+        letter-spacing: -0.5px;
+    }
+}
+
+/* Small phones: keep floating hero icons above the circular glow */
+@media (max-width: 480px) {
+    .hero-image,
+    .hero-visual {
+        position: relative;
+        isolation: isolate;
+    }
+
+    .hero-glow {
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    .floating-icon,
+    .tech-card {
+        z-index: 5;
+    }
+}
